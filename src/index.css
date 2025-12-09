@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #b392ac; /* Rosa pastel */
+  --primary-light: #d8c1d9; /* Rosa pastel claro */
+  --secondary: #9d8bb0; /* Roxo pastel */
+  --secondary-light: #c4b5e0; /* Roxo pastel claro */
+  --accent: #ffcb77; /* Amarelo pastel para estrelas */
+  --background: #f8f0ff; /* Fundo lilás muito claro */
+  --text: #4a4a4a; /* Texto escuro */
+  --text-light: #6e6e6e; /* Texto mais claro */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cloud-bg {
+  position: relative;
+}
+
+.cloud-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30,50 Q40,40 50,50 Q60,60 70,50 Q80,40 90,50 Q100,60 100,50 L100,100 L0,100 L0,50 Q10,40 20,50 Q30,60 30,50 Z' fill='%23ffffff' fill-opacity='0.1'/%3E%3C/svg%3E");
+  background-size: 100px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+}
+
+.star::after {
+  content: '✦';
+  position: absolute;
+  color: var(--accent);
+  animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium rounded-full hover:from-pink-500 hover:to-purple-500 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-pink-500 font-medium rounded-full border border-pink-200 hover:bg-pink-50 transition-all shadow-sm hover:shadow-md transform hover:-translate-y-1;
+}
+
+.card {
+  @apply bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition-all border border-purple-100;
+}
+
+.section-title {
+  @apply text-3xl font-serif font-medium gradient-text mb-4;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 max-w-2xl mx-auto;
+}
+
+/* Adiciona pequenas nuvens e estrelas decorativas */
+.cute-decoration {
+  position: relative;
+}
+
+.cute-decoration::before,
+.cute-decoration::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.cute-decoration::before {
+  top: -10px;
+  right: -10px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,1 L12,7 L18,7 L13,11 L15,17 L10,13 L5,17 L7,11 L2,7 L8,7 Z' fill='%23ffcb77'/%3E%3C/svg%3E");
+}
+
+.cute-decoration::after {
+  bottom: -10px;
+  left: -10px;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='20' viewBox='0 0 30 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5,15 Q10,5 15,15 Q20,25 25,15 Q30,5 30,15 L30,20 L0,20 L0,15 Z' fill='%23d8c1d9'/%3E%3C/svg%3E");
+}
