@@ -7,7 +7,7 @@ import fotoJuliana from '../images/titulo-juliana.jpg';
 const Hero = () => {
   const whats_phone = import.meta.env.VITE_WHATSAPP_PHONE;
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-r from-primary-light to-secondary-light overflow-hidden relative">
+    <section className="py-16 md:py-24 bg-gradient-to-r from-[#E3C8C8] to-white overflow-hidden relative">
       {/* Decorative elements */}
       <div className="absolute top-10 right-10 text-accent animate-twinkle">
         <Star size={20} fill="currentColor" />
