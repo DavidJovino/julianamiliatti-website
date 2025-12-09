@@ -64,10 +64,10 @@ const ServicesSection = ({ title, subtitle, services }) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-serif font-medium text-teal-800 mb-4">
-            {title || "Tratamentos"}
+            {title || "Formas de cuidado"}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {subtitle || "Conheça as abordagens terapêuticas disponíveis para ajudar você em sua jornada de autoconhecimento e bem-estar emocional."}
+            {subtitle || "Atualmente participo do Instituto Brasileiro de Psicanálise Winnicottiana, aprofundando minha prática clínica e ampliando meu olhar sobre o cuidado emocional."}
           </p>
         </div>
         {/* Caso queira 4 cards mudar o grid-cols-2 para grid-cols-4 */}

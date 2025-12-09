@@ -25,7 +25,7 @@ const HomePage = () => {
       />
       
       <ServicesSection 
-        title="Tratamentos"
+        title="Formas de cuidado"
         subtitle="Conheça as abordagens terapêuticas disponíveis para ajudar você em sua jornada de autoconhecimento e bem-estar emocional."
       />
       
