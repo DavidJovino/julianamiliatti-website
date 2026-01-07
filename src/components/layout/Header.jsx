@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const phone = import.meta.env.VITE_WHATSAPP_PHONE;
+  const crp = import.meta.env.VITE_CRP;
   return (
     <header className="py-4 bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
@@ -10,7 +11,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="text-xl md:text-2xl font-serif font-medium gradient-text flex items-center">
               <span className="relative">
-                Psicóloga - CRP 00/00000
+                Psicóloga - CRP {crp}
                 <span className="absolute -top-1 -right-2 text-accent text-xs">✦</span>
               </span>
             </Link>

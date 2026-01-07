@@ -13,8 +13,7 @@ const ContactSection = () => {
               Fale Comigo
             </h2>
             <p className="section-subtitle">
-              Estou aqui para ajudar você em sua jornada de autoconhecimento e bem-estar emocional. 
-              Entre em contato para agendar uma consulta ou tirar suas dúvidas.
+              Estou aqui para acompanhar você em sua jornada de reconhecimento de si, oferecendo um espaço seguro e suficientemente bom para que suas experiências possam ser acolhidas e elaboradas no seu tempo. Entre em contato para agendar uma consulta ou esclarecer suas dúvidas.
             </p>
           </div>
           

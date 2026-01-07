@@ -43,7 +43,7 @@ const AboutPage = () => {
                   </p>
                   
                   <p className="text-gray-700 mb-4">
-                    Atualmente, participo de grupos de estudo sobre feminismo e sou membro do IBPW – Instituto Winnicott, buscando sempre aprofundar meu olhar sobre a relação terapêutica e a escuta acolhedora.
+                    Atualmente, participo de grupos de estudo sobre feminismo e sou membro do IBPW – Instituto Brasileiro de Psicanálise Winnicottiana, buscando sempre aprofundar meu olhar sobre a relação terapêutica e a escuta acolhedora.
                   </p>
                   <p className="text-gray-700">
                     Além da psicologia, sou apaixonada por artesanatos, encontrando na criação manual uma forma de expressão, cuidado e conexão com o presente. Seja no cuidado com as pessoas ou nas minhas criações, acredito na importância de transformar experiências em algo significativo e sensível.

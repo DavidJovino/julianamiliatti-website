@@ -4,8 +4,9 @@ import { Heart } from 'lucide-react';
 const Footer = () => {
   const whats_phone = import.meta.env.VITE_WHATSAPP_PHONE;
   const phone = import.meta.env.VITE_PHONE;
+  const crp = import.meta.env.VITE_CRP;
   return (
-    <footer className="py-8 ">
+    <footer className="py-8 bg-gradient-to-r from-primary-light/70 to-secondary-light/70">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -15,7 +16,7 @@ const Footer = () => {
                 Psicóloga dedicada a ajudar você a encontrar seu equilíbrio emocional e bem-estar através de uma abordagem acolhedora e personalizada.
               </p>
               <p className="text-gray-700 font-medium">
-                CRP: 00/00000
+                CRP: {crp}
               </p>
             </div>
             
