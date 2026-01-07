@@ -5,7 +5,7 @@ const Footer = () => {
   const whats_phone = import.meta.env.VITE_WHATSAPP_PHONE;
   const phone = import.meta.env.VITE_PHONE;
   return (
-    <footer className="py-8 bg-gradient-to-r from-primary-light/70 to-secondary-light/70">
+    <footer className="py-8 ">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

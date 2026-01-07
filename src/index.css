@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --primary: #b392ac; /* Rosa pastel */
-  --primary-light: #d8c1d9; /* Rosa pastel claro */
-  --secondary: #9d8bb0; /* Roxo pastel */
-  --secondary-light: #c4b5e0; /* Roxo pastel claro */
-  --accent: #ffcb77; /* Amarelo pastel para estrelas */
-  --background: #f8f0ff; /* Fundo lilás muito claro */
-  --text: #4a4a4a; /* Texto escuro */
-  --text-light: #6e6e6e; /* Texto mais claro */
+  --primary: #E3C8C8;        /* Rosa nude principal */
+  --primary-light: #F1DEDE;  /* Rosa claro suave */
+  --secondary: #C1A3A3;      /* Rosé acinzentado */
+  --secondary-light: #E8D6D6;
+  --accent: #D6B26E;         /* Dourado suave (detalhes, estrelas, ícones) */
+  --background: #FAF6F6;     /* Fundo quase branco rosado */ 
+  --text: #3F3A3A;           /* Texto principal (alto contraste sem ser preto) */
+  --text-light: #6F6767;     /* Texto secundário */
 }
 
 body {
