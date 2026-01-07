@@ -13,7 +13,7 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-medium text-primary mb-4">Sobre</h3>
               <p className="text-gray-700 mb-4">
-                Psicóloga dedicada a ajudar você a encontrar seu equilíbrio emocional e bem-estar através de uma abordagem acolhedora e personalizada.
+                Psicóloga dedicada a promover o amadurecimento emocional no seu tempo, fundamentada na Psicologia Winnicottiana, que valoriza o cuidado, a escuta sensível e a construção de um espaço seguro para que o indivíduo possa ser quem é.
               </p>
               <p className="text-gray-700 font-medium">
                 CRP: {crp}
